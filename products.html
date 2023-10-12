@@ -33,19 +33,15 @@
           <li class="nav-item">
           </li>
           <div class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton1"
-              data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown button
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li><a class="dropdown-item" href="my-profile.html">Mi Perfil</a></li>
               <li><a class="dropdown-item" href="cart.html">Mi Carrito</a></li>
               <li>
-                 <a id="closeSession" class="dropdown-item" href="login.html">Cerrar Sesión</a>
+                <a id="closeSession" class="dropdown-item" href="login.html">Cerrar Sesión</a>
               </li>
             </ul>
           </div>
@@ -53,52 +49,54 @@
       </div>
     </div>
   </nav>
-  
- 
+
+
   <main class="pb-5 container">
     <div class="container">
       <h4 class="subtitle">Productos</h4>
       <p class="parrafoSub" id="detalle"></p>
       <section class="inputBuscar">
-        <div>
-          <input id="inputFilter" type="search" placeholder="Buscar Productos">
-        </div>
-        <div>
-          <div class="btn-group btn-group-toggle mb-4" data-bs-toggle="buttons">
-            <input type="radio" class="btn-check" name="options" id="sortAsc">
-            <label class="btn btn-light" for="sortAsc">A-Z</label>
-            <input type="radio" class="btn-check" name="options" id="sortDesc">
-            <label class="btn btn-light" for="sortDesc">Z-A</label>
-            <input type="radio" class="btn-check" name="options" id="sortByCount" checked>
-            <label class="btn btn-light" for="sortByCount"><i class="fas fa-sort-amount-down mr-1"></i></label>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-8">
+            <input id="inputFilter" type="search" placeholder="Buscar Productos">
+          </div>
+          <div class="col-12 col-md-6 col-lg-12">
+            <div class="btn-group btn-group-toggle mb-4" data-bs-toggle="buttons">
+              <input type="radio" class="btn-check" name="options" id="sortAsc">
+              <label class="btn btn-light" for="sortAsc">A-Z</label>
+              <input type="radio" class="btn-check" name="options" id="sortDesc">
+              <label class="btn btn-light" for="sortDesc">Z-A</label>
+              <input type="radio" class="btn-check" name="options" id="sortByCount" checked>
+              <label class="btn btn-light" for="sortByCount"><i class="fas fa-sort-amount-down mr-1"></i></label>
+            </div>
           </div>
         </div>
       </section>
-     
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 offset-lg-6">
-            <div class="row">
-              <div class="col-md-12 mb-3">
-                <div class="row">
-                  <div class="col-12 col-sm-3 col-md-3">
-                    <p class="font-weight-normal text-center text-md-end my-2">Precio</p>
-                  </div>
-                  <div class="col-12 col-sm-3 col-md-3">
-                    <input class="form-control" type="number" placeholder="min." id="rangeFilterCountMin" />
-                  </div>
-                  <div class="col-12 col-sm-3 col-md-3">
-                    <input class="form-control" type="number" placeholder="máx." id="rangeFilterCountMax" />
-                  </div>
-                  <div class="col-12 col-sm-3 col-md-3">
-                    <div class="btn-group" role="group">
-                      <button class="btn btn-light btn-block" id="rangeFilterCount">
-                        Filtrar
-                      </button>
-                      <button class="btn btn-link btn-sm" id="clearRangeFilter">
-                        Limpiar
-                      </button>
-                    </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-6">
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <div class="row">
+                <div class="col-12 col-sm-3 col-md-3">
+                  <p class="font-weight-normal text-center text-md-end my-2">Precio</p>
+                </div>
+                <div class="col-12 col-sm-3 col-md-3">
+                  <input class="form-control" type="number" placeholder="min." id="rangeFilterCountMin" />
+                </div>
+                <div class="col-12 col-sm-3 col-md-3">
+                  <input class="form-control" type="number" placeholder="máx." id="rangeFilterCountMax" />
+                </div>
+                <div class="col-12 col-sm-3 col-md-3">
+                  <div class="btn-group" role="group">
+                    <button class="btn btn-light btn-block" id="rangeFilterCount">
+                      Filtrar
+                    </button>
+                    <button class="btn btn-link btn-sm" id="clearRangeFilter">
+                      Limpiar
+                    </button>
                   </div>
                 </div>
               </div>
@@ -106,9 +104,10 @@
           </div>
         </div>
       </div>
-      <ul id="product-list" class="list-group"></ul>
-  </div>
-  
+    </div>
+    <ul id="product-list" class="list-group"></ul>
+    </div>
+
   </main>
 
   <footer class="text-muted">
@@ -116,7 +115,8 @@
       <p class="float-end">
         <a href="#">Volver arriba</a>
       </p>
-      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a></p>
+      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a>
+      </p>
     </div>
   </footer>
   <div id="spinner-wrapper">
